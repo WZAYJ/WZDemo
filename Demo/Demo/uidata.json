@@ -1,0 +1,25 @@
+      
+[
+    {
+        "viewType":"swiper",
+        "datas":{
+            "id":"",
+            "imgurl":"",
+            "title":"",
+            "desc":"",
+            "action":"A000001",
+            "parameter":""
+        }
+    },
+    {
+        "viewType":"selectV",
+        "datas":{
+            "id":"",
+            "imgurl":"",
+            "title":"",
+            "desc":"",
+            "action":"A000001",
+            "parameter":""
+        }
+    }
+]
