@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WZSelectView : UIView
+//-(instancetype)initwithDataUIModel:(BaseUIModel*)uiModel;
 
 @end
 

@@ -6,6 +6,8 @@ pod 'AFNetworking'
 pod 'YYKit'
 pod 'PNChart'
 pod 'Charts'
+pod 'AMap2DMap'
+pod 'SDCycleScrollView'
 use_frameworks!
 #pod 'JPush'
 #pod ‘UMengUShare/UI’

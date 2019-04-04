@@ -1,25 +1,121 @@
       
 [
+    
     {
-        "viewType":"swiper",
-        "datas":{
+        "viewType":"2",
+        "dataModel":{
             "id":"",
             "imgurl":"",
-            "title":"",
+            "title":"山东 青岛市 崂山区 海尔路交运汽车动能研发园",
             "desc":"",
+            "maptitleType":"2",
+            "latitude":"36.085834",
+            "longitude":"120.406417",
             "action":"A000001",
             "parameter":""
         }
     },
     {
-        "viewType":"selectV",
-        "datas":{
+        "viewType":"1",
+        "dataModel":{
+            "id":"",
+            "imgurl":"http://pic39.nipic.com/20140308/13085675_113419113000_2.jpg",
+            "title":"标题",
+            "desc":"",
+            "name":"青岛思锐特信息科技有限公司",
+            "englishName":"Qingdao Sirit Information Technology Co., Ltd.",
+            "action":"A000001",
+            "parameter":""
+        }
+    },
+    {
+        "viewType":"4",
+        "dataModel":{
             "id":"",
             "imgurl":"",
             "title":"",
             "desc":"",
             "action":"A000001",
+            "parameter":"",
+            "imageArr":["https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=a4c7a13b34f33a87816d061af65d1018/8d5494eef01f3a295c0bf7c59725bc315d607cfd.jpg","https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=60b8e72a8901a18befeb144fae2e0761/8644ebf81a4c510f3295831c6e59252dd42aa567.jpg","https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=a292f2e0af44ad3431bf8187e0a30c08/574e9258d109b3deaf33b465c2bf6c81800a4c2a.jpg"
+            ]
+        }
+    },
+    {
+        "viewType":"5",
+        "dataModel":{
+            "id":"",
+            "imgurl":"",
+            "title":"",
+            "desc":"",
+            "action":"A000001",
+            "parameter":"",
+            "imageArr":["buttonBg","buttonBg","buttonBg","buttonBg"],
+            "titleArr":["模块名","模块名","模块名","模块名"]
+        }
+    },
+    {
+        "viewType":"6",
+        "dataModel":{
+            "id":"",
+            "imgurl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1870340970,1956859240&fm=11&gp=0.jpg",
+            "title":"文章标题",
+            "desc":"啛啛喳喳错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错啛啛喳喳错错错错错错错错错啛啛喳喳错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错错",
+            "action":"A000001",
+            "parameter":"",
+            "imageArr":["buttonBg","buttonBg","buttonBg","buttonBg"],
+            "titleArr":["模块名","模块名","模块名","模块名"]
+        }
+    },
+    {
+        "viewType":"7",
+        "dataModel":{
+            "id":"",
+            "imgurl":"https://t7.baidu.com/it/u=1786136781,576968309&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=0d6050918df4b3451fe0c3292f4b5d03",
+            "title":"一朵云的诉说",
+            "desc":"当我还是天边的一朵云，是一缕白色的轻纱，飘逸清淡，在天空中漫无目的地漂游着。是风儿把我们聚拢在一起，变成一团乌黑的云层。我不知道是世界染黑了我，还是黑色才是我的本来面貌。又或是我本来就没有颜色，黑与白只是眼中的错觉，正像夕照中的我是一团火红的云霞。风儿无时无刻不在装扮着我的面貌，阳光无时无刻不在改变着我的颜色。因为我只是一朵卑微的云，无力主宰自己的沉浮，更无力去改变世界，一任命运的拨弄。我感谢风儿，它把我平凡的身影，装扮成各式各样的美丽形状，它给了我一双飞翔的翅膀，带我四处遨游，它把我们从四面八方聚合在一起，让我认识了许多情投意合的朋友；我又憎恨风儿，它刚把我们摆成一个迷人的造型，下一秒钟又把我们吹得支离破碎，它拆散了两朵已经牵手的云彩，一个向东，一个向西，既然最终是这种分离的结局，当初又何必要吹送在一起？",
+            "action":"A000001",
             "parameter":""
         }
-    }
+    },
+    {
+        "viewType":"8",
+        "dataModel":{
+            "id":"",
+            "imgurl":"",
+            "title":"推荐产品",
+            "desc":"",
+            "action":"A000001",
+            "parameter":"",
+            "imageArr":["https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f"],
+            "titleArr":["是否我还期待你的出现无法再相信痛哭的人","是否我还期待你的出现无法再相信痛哭的人","是否我还期待你的出现无法再相信痛哭的人","是否我还期待你的出现无法再相信痛哭的人"]
+        }
+    },
+    {
+        "viewType":"9",
+        "dataModel":{
+            "id":"",
+            "imgurl":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=186027807,3541714268&fm=27&gp=0.jpg",
+            "title":"Vincet Van Gogh",
+            "desc":"简介简介一句话就搞定",
+            "subheading":"副标题",
+            "action":"A000001",
+            "parameter":""
+        }
+    },
+    {
+        "viewType":"12",
+        "dataModel":{
+            "id":"",
+            "imgurl":"",
+            "title":"推荐产品",
+            "desc":"",
+            "action":"A000001",
+            "parameter":"",
+            "imageArr":["https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f","https://t8.baidu.com/it/u=1542175300,2332809864&fm=191&app=48&size=h300&n=0&g=4n&f=JPEG?sec=1853310920&t=97604a5b6c3b9ddc4d9efa00b24da39f"],
+            "titleArr":["标题1","标题2","标题3","标题4"],
+            "messageArr":["是否我还期待你的出现无法再相信痛哭的人\n仅仅因为他想干什么时恰好优惠政策结束了\n否我还期待你的出现无法","是否我还期待你的出现无法再相信痛哭的人\n仅仅因为他想干什么时恰好优惠政策结束了。\n否我还期待你的出现无法","是否我还期待你的出现无法再相信痛哭的人\n仅仅因为他想干什么时恰好优惠政策结束了\n否我还期待你的出现无法","是否我还期待你的出现无法再相信痛哭的人\n仅仅因为他想干什么时恰好优惠政策结束了\n否我还期待你的出现无法"]
+            
+        }
+    },
 ]

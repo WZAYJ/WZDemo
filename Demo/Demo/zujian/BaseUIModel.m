@@ -9,5 +9,12 @@
 #import "BaseUIModel.h"
 
 @implementation BaseUIModel
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    // value使用[YYEatModel class]或YYEatModel.class或@"YYEatModel"没有区别
+    return @{@"dataModel" : [BaseUIDataModel class]};
+}
+@end
+
+@implementation BaseUIDataModel
 
 @end

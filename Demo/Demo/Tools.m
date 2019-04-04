@@ -201,7 +201,7 @@ NSOrderedAscending)
 }
 
 // 读取本地JSON文件
-+ (NSArray *)readLocalFileWithName:(NSString *)name {
++ (id)readLocalFileWithName:(NSString *)name {
     // 获取文件路径
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     // 将文件数据化
@@ -268,5 +268,18 @@ NSOrderedAscending)
     NSString * string = [[NSString alloc] initWithData:mdata encoding:NSUTF8StringEncoding];
 
     return string;
+}
+
+//创建Label
++ (UILabel*)createLabelWithTextColor:(UIColor*)color Font:(UIFont*)font TextAlignment:(NSTextAlignment)textalignment
+{
+    UILabel*label = [UILabel new];
+    label.font = font;
+    label.textColor = color;
+    if (!textalignment) {
+        textalignment = NSTextAlignmentLeft;
+    }
+    label.textAlignment = textalignment;
+    return label;
 }
 @end

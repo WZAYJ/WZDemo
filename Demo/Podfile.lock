@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.6)
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
@@ -28,6 +31,11 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
   - UICountingLabel (1.2.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -35,34 +43,44 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AMap2DMap
   - Charts
   - Masonry
   - MBProgressHUD
   - PNChart
   - ReactiveCocoa (~> 2.5)
+  - SDCycleScrollView
   - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AMap2DMap
+    - AMapFoundation
     - Charts
     - Masonry
     - MBProgressHUD
     - PNChart
     - ReactiveCocoa
+    - SDCycleScrollView
+    - SDWebImage
     - UICountingLabel
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: aae2f9e2d93879ce1effa132acee046446f31a2f
+PODFILE CHECKSUM: 1166d3dc9f3c14a34524bcc7b2d5df2043b7ef82
 
 COCOAPODS: 1.6.1

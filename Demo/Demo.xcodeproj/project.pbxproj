@@ -20,13 +20,29 @@
 		1898203E22424BE400775650 /* HttpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898203C22424BE400775650 /* HttpTools.m */; };
 		1898204222424C4400775650 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898204122424C4400775650 /* Tools.m */; };
 		189820442243152C00775650 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189820432243152B00775650 /* image.jpg */; };
+		18E6CBC222558EA300607943 /* UIData.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E6CBC122558EA300607943 /* UIData.json */; };
+		18E6CBC722558EC100607943 /* WZAddressMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBC322558EC100607943 /* WZAddressMapView.m */; };
+		18E6CBC822558EC100607943 /* WZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBC522558EC100607943 /* WZTextView.m */; };
+		18E6CBCD22558FB600607943 /* BaseAssemblyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBCC22558FB600607943 /* BaseAssemblyView.m */; };
+		18E6CBD022558FDE00607943 /* WZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBCF22558FDE00607943 /* WZBannerView.m */; };
+		18E6CBD322558FF900607943 /* WZImageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBD222558FF900607943 /* WZImageTextView.m */; };
+		18E6CBD62255902A00607943 /* WZIntroduceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBD52255902A00607943 /* WZIntroduceView.m */; };
+		18E6CBD92255943300607943 /* AssemblySubview1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBD82255943300607943 /* AssemblySubview1.m */; };
+		18E6CBDC2255945300607943 /* AssemblySubview2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBDB2255945300607943 /* AssemblySubview2.m */; };
+		18E6CBDF2255945E00607943 /* AssemblySubview3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBDE2255945E00607943 /* AssemblySubview3.m */; };
+		18E6CBE22255946900607943 /* AssemblySubview4.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBE12255946900607943 /* AssemblySubview4.m */; };
+		18E6CBE52255947400607943 /* AssemblySubview5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBE42255947400607943 /* AssemblySubview5.m */; };
+		18E6CBE82255947F00607943 /* AssemblySubview6.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBE72255947F00607943 /* AssemblySubview6.m */; };
+		18E6CBEB2255948900607943 /* AssemblySubview7.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBEA2255948900607943 /* AssemblySubview7.m */; };
+		18E6CBEE2255949400607943 /* AssemblySubview8.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBED2255949400607943 /* AssemblySubview8.m */; };
+		18E6CBF12255949D00607943 /* AssemblySubview9.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBF02255949D00607943 /* AssemblySubview9.m */; };
+		18E6CBF4225594A700607943 /* AssemblySubview10.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBF3225594A700607943 /* AssemblySubview10.m */; };
+		18E6CBF7225594B000607943 /* AssemblySubview11.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBF6225594B000607943 /* AssemblySubview11.m */; };
+		18EF269D2255EEE5007D83D8 /* AssemblySubview12.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF269C2255EEE5007D83D8 /* AssemblySubview12.m */; };
 		18F95F65224E092C003455CB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F64224E092C003455CB /* TestViewController.m */; };
-		18F95F69224E0A9A003455CB /* WZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F68224E0A9A003455CB /* WZTextView.m */; };
 		18F95F6C224E2375003455CB /* WZSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F6B224E2375003455CB /* WZSelectView.m */; };
-		18F95F6F224E33E1003455CB /* BaseAssemblyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F6E224E33E1003455CB /* BaseAssemblyView.m */; };
 		18F95F73224F0EFA003455CB /* WZPopView+class.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F72224F0EFA003455CB /* WZPopView+class.m */; };
 		18F95F78224F70DD003455CB /* BaseUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F95F77224F70DD003455CB /* BaseUIModel.m */; };
-		18F95F7A224F7BE2003455CB /* uidata.json in Resources */ = {isa = PBXBuildFile; fileRef = 18F95F79224F7BE1003455CB /* uidata.json */; };
 		650E91217E686540B1E5032E /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41DB856C6E5BDC78FA8B409 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,21 +90,53 @@
 		1898204022424C4400775650 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		1898204122424C4400775650 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		189820432243152B00775650 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		18E6CBC122558EA300607943 /* UIData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UIData.json; sourceTree = "<group>"; };
+		18E6CBC322558EC100607943 /* WZAddressMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAddressMapView.m; sourceTree = "<group>"; };
+		18E6CBC422558EC100607943 /* WZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZTextView.h; sourceTree = "<group>"; };
+		18E6CBC522558EC100607943 /* WZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTextView.m; sourceTree = "<group>"; };
+		18E6CBC622558EC100607943 /* WZAddressMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAddressMapView.h; sourceTree = "<group>"; };
+		18E6CBC922558EE300607943 /* BaseUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIModel.h; sourceTree = "<group>"; };
+		18E6CBCB22558FA500607943 /* BaseAssemblyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAssemblyView.h; sourceTree = "<group>"; };
+		18E6CBCC22558FB600607943 /* BaseAssemblyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAssemblyView.m; sourceTree = "<group>"; };
+		18E6CBCE22558FDE00607943 /* WZBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBannerView.h; sourceTree = "<group>"; };
+		18E6CBCF22558FDE00607943 /* WZBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBannerView.m; sourceTree = "<group>"; };
+		18E6CBD122558FF900607943 /* WZImageTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZImageTextView.h; sourceTree = "<group>"; };
+		18E6CBD222558FF900607943 /* WZImageTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZImageTextView.m; sourceTree = "<group>"; };
+		18E6CBD42255902A00607943 /* WZIntroduceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZIntroduceView.h; sourceTree = "<group>"; };
+		18E6CBD52255902A00607943 /* WZIntroduceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZIntroduceView.m; sourceTree = "<group>"; };
+		18E6CBD72255943300607943 /* AssemblySubview1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview1.h; sourceTree = "<group>"; };
+		18E6CBD82255943300607943 /* AssemblySubview1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview1.m; sourceTree = "<group>"; };
+		18E6CBDA2255945300607943 /* AssemblySubview2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview2.h; sourceTree = "<group>"; };
+		18E6CBDB2255945300607943 /* AssemblySubview2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview2.m; sourceTree = "<group>"; };
+		18E6CBDD2255945E00607943 /* AssemblySubview3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview3.h; sourceTree = "<group>"; };
+		18E6CBDE2255945E00607943 /* AssemblySubview3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview3.m; sourceTree = "<group>"; };
+		18E6CBE02255946900607943 /* AssemblySubview4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview4.h; sourceTree = "<group>"; };
+		18E6CBE12255946900607943 /* AssemblySubview4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview4.m; sourceTree = "<group>"; };
+		18E6CBE32255947400607943 /* AssemblySubview5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview5.h; sourceTree = "<group>"; };
+		18E6CBE42255947400607943 /* AssemblySubview5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview5.m; sourceTree = "<group>"; };
+		18E6CBE62255947F00607943 /* AssemblySubview6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview6.h; sourceTree = "<group>"; };
+		18E6CBE72255947F00607943 /* AssemblySubview6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview6.m; sourceTree = "<group>"; };
+		18E6CBE92255948900607943 /* AssemblySubview7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview7.h; sourceTree = "<group>"; };
+		18E6CBEA2255948900607943 /* AssemblySubview7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview7.m; sourceTree = "<group>"; };
+		18E6CBEC2255949400607943 /* AssemblySubview8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview8.h; sourceTree = "<group>"; };
+		18E6CBED2255949400607943 /* AssemblySubview8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview8.m; sourceTree = "<group>"; };
+		18E6CBEF2255949D00607943 /* AssemblySubview9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview9.h; sourceTree = "<group>"; };
+		18E6CBF02255949D00607943 /* AssemblySubview9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview9.m; sourceTree = "<group>"; };
+		18E6CBF2225594A700607943 /* AssemblySubview10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview10.h; sourceTree = "<group>"; };
+		18E6CBF3225594A700607943 /* AssemblySubview10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview10.m; sourceTree = "<group>"; };
+		18E6CBF5225594B000607943 /* AssemblySubview11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview11.h; sourceTree = "<group>"; };
+		18E6CBF6225594B000607943 /* AssemblySubview11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview11.m; sourceTree = "<group>"; };
+		18EF269B2255EEE5007D83D8 /* AssemblySubview12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview12.h; sourceTree = "<group>"; };
+		18EF269C2255EEE5007D83D8 /* AssemblySubview12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview12.m; sourceTree = "<group>"; };
 		18F95F63224E092C003455CB /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		18F95F64224E092C003455CB /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		18F95F67224E0A9A003455CB /* WZTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZTextView.h; sourceTree = "<group>"; };
-		18F95F68224E0A9A003455CB /* WZTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZTextView.m; sourceTree = "<group>"; };
 		18F95F6A224E2375003455CB /* WZSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZSelectView.h; sourceTree = "<group>"; };
 		18F95F6B224E2375003455CB /* WZSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZSelectView.m; sourceTree = "<group>"; };
-		18F95F6D224E33E1003455CB /* BaseAssemblyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAssemblyView.h; sourceTree = "<group>"; };
-		18F95F6E224E33E1003455CB /* BaseAssemblyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAssemblyView.m; sourceTree = "<group>"; };
 		18F95F71224F0EFA003455CB /* WZPopView+class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WZPopView+class.h"; sourceTree = "<group>"; };
 		18F95F72224F0EFA003455CB /* WZPopView+class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WZPopView+class.m"; sourceTree = "<group>"; };
 		18F95F74224F0F4D003455CB /* WZPopView+kuozhan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WZPopView+kuozhan.h"; sourceTree = "<group>"; };
 		18F95F75224F0F6B003455CB /* delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delegate.h; sourceTree = "<group>"; };
-		18F95F76224F70DD003455CB /* BaseUIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUIModel.h; sourceTree = "<group>"; };
 		18F95F77224F70DD003455CB /* BaseUIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUIModel.m; sourceTree = "<group>"; };
-		18F95F79224F7BE1003455CB /* uidata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uidata.json; sourceTree = "<group>"; };
 		895FBE77B63A532F7A3DB7CB /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A41DB856C6E5BDC78FA8B409 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCF424625D22A6EC79F36E4 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +195,7 @@
 			children = (
 				18F95F66224E0A25003455CB /* zujian */,
 				189820432243152B00775650 /* image.jpg */,
-				18F95F79224F7BE1003455CB /* uidata.json */,
+				18E6CBC122558EA300607943 /* UIData.json */,
 				1898204022424C4400775650 /* Tools.h */,
 				1898204122424C4400775650 /* Tools.m */,
 				18982039224215CA00775650 /* WZPopView.h */,
@@ -194,16 +242,56 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		18E6CBF9225594E400607943 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				18E6CBD72255943300607943 /* AssemblySubview1.h */,
+				18E6CBD82255943300607943 /* AssemblySubview1.m */,
+				18E6CBDA2255945300607943 /* AssemblySubview2.h */,
+				18E6CBDB2255945300607943 /* AssemblySubview2.m */,
+				18E6CBDD2255945E00607943 /* AssemblySubview3.h */,
+				18E6CBDE2255945E00607943 /* AssemblySubview3.m */,
+				18E6CBE02255946900607943 /* AssemblySubview4.h */,
+				18E6CBE12255946900607943 /* AssemblySubview4.m */,
+				18E6CBE32255947400607943 /* AssemblySubview5.h */,
+				18E6CBE42255947400607943 /* AssemblySubview5.m */,
+				18E6CBE62255947F00607943 /* AssemblySubview6.h */,
+				18E6CBE72255947F00607943 /* AssemblySubview6.m */,
+				18E6CBE92255948900607943 /* AssemblySubview7.h */,
+				18E6CBEA2255948900607943 /* AssemblySubview7.m */,
+				18E6CBEC2255949400607943 /* AssemblySubview8.h */,
+				18E6CBED2255949400607943 /* AssemblySubview8.m */,
+				18E6CBEF2255949D00607943 /* AssemblySubview9.h */,
+				18E6CBF02255949D00607943 /* AssemblySubview9.m */,
+				18E6CBF2225594A700607943 /* AssemblySubview10.h */,
+				18E6CBF3225594A700607943 /* AssemblySubview10.m */,
+				18E6CBF5225594B000607943 /* AssemblySubview11.h */,
+				18E6CBF6225594B000607943 /* AssemblySubview11.m */,
+				18EF269B2255EEE5007D83D8 /* AssemblySubview12.h */,
+				18EF269C2255EEE5007D83D8 /* AssemblySubview12.m */,
+			);
+			name = Subview;
+			sourceTree = "<group>";
+		};
 		18F95F66224E0A25003455CB /* zujian */ = {
 			isa = PBXGroup;
 			children = (
-				18F95F67224E0A9A003455CB /* WZTextView.h */,
-				18F95F68224E0A9A003455CB /* WZTextView.m */,
+				18E6CBCB22558FA500607943 /* BaseAssemblyView.h */,
+				18E6CBCC22558FB600607943 /* BaseAssemblyView.m */,
+				18E6CBF9225594E400607943 /* Subview */,
+				18E6CBC622558EC100607943 /* WZAddressMapView.h */,
+				18E6CBC322558EC100607943 /* WZAddressMapView.m */,
+				18E6CBC422558EC100607943 /* WZTextView.h */,
+				18E6CBC522558EC100607943 /* WZTextView.m */,
 				18F95F6A224E2375003455CB /* WZSelectView.h */,
 				18F95F6B224E2375003455CB /* WZSelectView.m */,
-				18F95F6D224E33E1003455CB /* BaseAssemblyView.h */,
-				18F95F6E224E33E1003455CB /* BaseAssemblyView.m */,
-				18F95F76224F70DD003455CB /* BaseUIModel.h */,
+				18E6CBCE22558FDE00607943 /* WZBannerView.h */,
+				18E6CBCF22558FDE00607943 /* WZBannerView.m */,
+				18E6CBD122558FF900607943 /* WZImageTextView.h */,
+				18E6CBD222558FF900607943 /* WZImageTextView.m */,
+				18E6CBD42255902A00607943 /* WZIntroduceView.h */,
+				18E6CBD52255902A00607943 /* WZIntroduceView.m */,
+				18E6CBC922558EE300607943 /* BaseUIModel.h */,
 				18F95F77224F70DD003455CB /* BaseUIModel.m */,
 			);
 			path = zujian;
@@ -238,6 +326,7 @@
 				189820012241E17600775650 /* Frameworks */,
 				189820022241E17600775650 /* Resources */,
 				8AB5B250DDF4DCE2C30D58DF /* [CP] Embed Pods Frameworks */,
+				D4A53076BEDE900D9A9F359B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,11 +420,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F95F7A224F7BE2003455CB /* uidata.json in Resources */,
 				189820142241E17800775650 /* LaunchScreen.storyboard in Resources */,
 				189820112241E17800775650 /* Assets.xcassets in Resources */,
 				1898200F2241E17600775650 /* Main.storyboard in Resources */,
 				189820442243152C00775650 /* image.jpg in Resources */,
+				18E6CBC222558EA300607943 /* UIData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +482,8 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
@@ -406,12 +497,36 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A53076BEDE900D9A9F359B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-resources.sh",
+				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -421,19 +536,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F95F69224E0A9A003455CB /* WZTextView.m in Sources */,
+				18E6CBD62255902A00607943 /* WZIntroduceView.m in Sources */,
+				18E6CBD322558FF900607943 /* WZImageTextView.m in Sources */,
+				18E6CBDC2255945300607943 /* AssemblySubview2.m in Sources */,
 				1898200C2241E17600775650 /* ViewController.m in Sources */,
+				18E6CBE82255947F00607943 /* AssemblySubview6.m in Sources */,
+				18E6CBCD22558FB600607943 /* BaseAssemblyView.m in Sources */,
 				1898203B224215CA00775650 /* WZPopView.m in Sources */,
+				18E6CBF12255949D00607943 /* AssemblySubview9.m in Sources */,
 				189820172241E17800775650 /* main.m in Sources */,
+				18E6CBF7225594B000607943 /* AssemblySubview11.m in Sources */,
 				1898204222424C4400775650 /* Tools.m in Sources */,
+				18E6CBD92255943300607943 /* AssemblySubview1.m in Sources */,
 				18416C97224B8382001F69A7 /* BlockViewController.m in Sources */,
 				189820092241E17600775650 /* AppDelegate.m in Sources */,
+				18E6CBE22255946900607943 /* AssemblySubview4.m in Sources */,
+				18E6CBC822558EC100607943 /* WZTextView.m in Sources */,
+				18E6CBE52255947400607943 /* AssemblySubview5.m in Sources */,
+				18EF269D2255EEE5007D83D8 /* AssemblySubview12.m in Sources */,
 				18F95F65224E092C003455CB /* TestViewController.m in Sources */,
 				18F95F73224F0EFA003455CB /* WZPopView+class.m in Sources */,
+				18E6CBEB2255948900607943 /* AssemblySubview7.m in Sources */,
 				18F95F78224F70DD003455CB /* BaseUIModel.m in Sources */,
 				1898203E22424BE400775650 /* HttpTools.m in Sources */,
 				18F95F6C224E2375003455CB /* WZSelectView.m in Sources */,
-				18F95F6F224E33E1003455CB /* BaseAssemblyView.m in Sources */,
+				18E6CBDF2255945E00607943 /* AssemblySubview3.m in Sources */,
+				18E6CBF4225594A700607943 /* AssemblySubview10.m in Sources */,
+				18E6CBEE2255949400607943 /* AssemblySubview8.m in Sources */,
+				18E6CBC722558EC100607943 /* WZAddressMapView.m in Sources */,
+				18E6CBD022558FDE00607943 /* WZBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

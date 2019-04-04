@@ -83,7 +83,7 @@
  解析本地json文件
  */
 
-+ (NSArray *)readLocalFileWithName:(NSString *)name;
++ (id)readLocalFileWithName:(NSString *)name;
 
 /**
 获取当前时间
@@ -98,6 +98,7 @@
 + (void)showTextOnly:(NSString *)msg;
 + (void)showAlert:(NSString *) message;
 
++ (UILabel*)createLabelWithTextColor:(UIColor*)color Font:(UIFont*)font TextAlignment:(NSTextAlignment)textalignment;
 /**
 数组转换成json字符串 */
 +(NSString*)getStringWithModelArr:(NSArray*)array;
