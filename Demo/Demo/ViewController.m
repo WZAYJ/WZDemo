@@ -11,14 +11,109 @@
 #import "HttpTools.h"
 #import "Tools.h"
 #import "BlockViewController.h"
-@interface ViewController ()
-@property(nonatomic,copy)NSString*token;
-@end
+#import <SJBaseVideoPlayer/SJBaseVideoPlayer+PlayStatus.h>
+#import "SJVideoPlayer.h"
+#import "CoverFlowLayout.h"
 
+@interface ViewController ()<UIScrollViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
+@property(nonatomic,copy)NSString*token;
+@property (nonatomic, weak) NSTimer *timer;
+
+@property (nonatomic, strong) SJVideoPlayer *player;
+@property (nonatomic, strong) UICollectionView *collectionView;
+@end
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CoverFlowLayout *layout=[[CoverFlowLayout alloc]init];
+
+    CGFloat margin = 20;
+    //创建layout
+    layout.minimumInteritemSpacing=margin;
+    layout.sectionInset=UIEdgeInsetsMake(margin, margin, margin, margin);
+    _collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView.height =350;
+    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.showsHorizontalScrollIndicator = NO;
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+  
+    [self.view addSubview:_collectionView];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+          [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:15 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    });
+  
+    [self setupTimer];
+}
+
+- (void)setupTimer
+{
+    [self invalidateTimer]; // 创建定时器前先停止定时器，不然会出现僵尸定时器，导致轮播频率错误
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
+    _timer = timer;
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)invalidateTimer
+{
+    [_timer invalidate];
+    _timer = nil;
+}
+- (void)automaticScroll
+{
+    int currentIndex = [self currentIndex];
+    int targetIndex = currentIndex + 1;
+    [self scrollToIndex:targetIndex];
+}
+
+- (void)scrollToIndex:(int)targetIndex
+{
+    if (targetIndex >= 30) {
+            targetIndex = 15;
+            [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        return;
+    }
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    if ([self currentIndex]>30) {
+       [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:15 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    }
+    if ([self currentIndex]<=0) {
+         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:15 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    }
+        
+    
+}
+
+- (int)currentIndex
+{
+    NSLog(@"%f",_collectionView.contentOffset.x);
+    
+    int index = 0;
+        index = (_collectionView.contentOffset.x + kScreenWidth * 0.5) /300;
+    return MAX(0, index);
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 30;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell*cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor redColor];
+    
+    return cell;
 }
 
 - (IBAction)popviewfromeBottom:(id)sender {

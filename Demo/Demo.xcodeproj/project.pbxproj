@@ -20,6 +20,7 @@
 		1898203E22424BE400775650 /* HttpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898203C22424BE400775650 /* HttpTools.m */; };
 		1898204222424C4400775650 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898204122424C4400775650 /* Tools.m */; };
 		189820442243152C00775650 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189820432243152B00775650 /* image.jpg */; };
+		18B781ED225D86FE00F7D43F /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B781EC225D86FE00F7D43F /* CoverFlowLayout.m */; };
 		18E6CBC222558EA300607943 /* UIData.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E6CBC122558EA300607943 /* UIData.json */; };
 		18E6CBC722558EC100607943 /* WZAddressMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBC322558EC100607943 /* WZAddressMapView.m */; };
 		18E6CBC822558EC100607943 /* WZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6CBC522558EC100607943 /* WZTextView.m */; };
@@ -90,6 +91,8 @@
 		1898204022424C4400775650 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		1898204122424C4400775650 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		189820432243152B00775650 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		18B781EB225D86FD00F7D43F /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = "<group>"; };
+		18B781EC225D86FE00F7D43F /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = "<group>"; };
 		18E6CBC122558EA300607943 /* UIData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UIData.json; sourceTree = "<group>"; };
 		18E6CBC322558EC100607943 /* WZAddressMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAddressMapView.m; sourceTree = "<group>"; };
 		18E6CBC422558EC100607943 /* WZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZTextView.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				189820082241E17600775650 /* AppDelegate.m */,
 				1898200A2241E17600775650 /* ViewController.h */,
 				1898200B2241E17600775650 /* ViewController.m */,
+				18B781EB225D86FD00F7D43F /* CoverFlowLayout.h */,
+				18B781EC225D86FE00F7D43F /* CoverFlowLayout.m */,
 				18F95F63224E092C003455CB /* TestViewController.h */,
 				18F95F64224E092C003455CB /* TestViewController.m */,
 				18F95F71224F0EFA003455CB /* WZPopView+class.h */,
@@ -480,11 +485,13 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/SJBaseVideoPlayer/SJBaseVideoPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SJUIKit/SJUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SJVideoPlayer/SJVideoPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -495,11 +502,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJBaseVideoPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJVideoPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +556,7 @@
 				189820172241E17800775650 /* main.m in Sources */,
 				18E6CBF7225594B000607943 /* AssemblySubview11.m in Sources */,
 				1898204222424C4400775650 /* Tools.m in Sources */,
+				18B781ED225D86FE00F7D43F /* CoverFlowLayout.m in Sources */,
 				18E6CBD92255943300607943 /* AssemblySubview1.m in Sources */,
 				18416C97224B8382001F69A7 /* BlockViewController.m in Sources */,
 				189820092241E17600775650 /* AppDelegate.m in Sources */,

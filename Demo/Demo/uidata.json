@@ -104,6 +104,18 @@
         }
     },
     {
+        "viewType":"10",
+        "dataModel":{
+            "id":"",
+            "imgurl":"https://xy2.v.netease.com/2018/0815/c4f8e15cf43e4404911c2e9d17d89d3fqt.mp4",
+            "title":"一次邂逅, 遇见一生所爱",
+            "desc":"简介简介一句话就搞定",
+            "subheading":"副标题",
+            "action":"A000001",
+            "parameter":""
+        }
+    },
+    {
         "viewType":"12",
         "dataModel":{
             "id":"",
