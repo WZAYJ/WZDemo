@@ -27,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     CoverFlowLayout *layout=[[CoverFlowLayout alloc]init];
-
     CGFloat margin = 20;
     //创建layout
     layout.minimumInteritemSpacing=margin;
@@ -39,13 +38,12 @@
     _collectionView.dataSource = self;
     _collectionView.showsHorizontalScrollIndicator = NO;
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-  
     [self.view addSubview:_collectionView];
-
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
           [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:15 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     });
-  
+    QMUIButton*button = [[QMUIButton alloc]init];
+//    button.imagePosition  =
     [self setupTimer];
 }
 

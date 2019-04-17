@@ -3,10 +3,15 @@ target 'Demo' do
 pod 'Masonry'
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'AFNetworking'
+pod 'QMUIKit'
 pod 'YYKit'
 # pod 'PNChart'
+# 统计图形
 pod 'Charts'
+# 视频播放器
 pod 'SJVideoPlayer'
+# 选择多张图片
+#pod 'HXPhotoPicker', '~> 2.1.9'
 pod 'AMap2DMap'
 pod 'SDCycleScrollView'
 use_frameworks!

@@ -16,7 +16,7 @@ static int height =83;
     
     int i =0;
     for (NSString*title in self.dataModel.titleArr) {
-        UIButton*button = [[UIButton alloc]init];
+        QMUIButton*button = [[QMUIButton alloc]init];
         [button setImage:[UIImage imageNamed:self.dataModel.imageArr[i]] forState:UIControlStateNormal];
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -30,9 +30,10 @@ static int height =83;
                 make.bottom.equalTo(self);
             }
         }];
-        button.titleEdgeInsets = UIEdgeInsetsMake(50, -button.imageView.bounds.size.width, 0,0);
-        button.imageEdgeInsets = UIEdgeInsetsMake(0, button.titleLabel.frame.size.width/2, button.titleLabel.frame.size.height+9, -button.titleLabel.frame.size.width/2);
-        
+//        button.titleEdgeInsets = UIEdgeInsetsMake(50, -button.imageView.bounds.size.width, 0,0);
+//        button.imageEdgeInsets = UIEdgeInsetsMake(0, button.titleLabel.frame.size.width/2, button.titleLabel.frame.size.height+9, -button.titleLabel.frame.size.width/2);
+//
+        button.imagePosition = QMUIButtonImagePositionTop;
         i++;
     }
     

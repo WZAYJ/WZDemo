@@ -33,4 +33,6 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <SDWebImage/SDWebImage.h>
+#import <QMUIKit/QMUIKit.h>
+#import "BaseViewController.h"
 #endif /* PrefixHeader_pch */

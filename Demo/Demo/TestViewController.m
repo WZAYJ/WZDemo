@@ -7,8 +7,6 @@
 //
 
 #import "TestViewController.h"
-#import "WZTextView.h"
-#import "WZSelectView.h"
 #import "BaseAssemblyView.h"
 #import "BaseUIModel.h"
 @interface TestViewController ()
@@ -34,7 +32,6 @@
     }
     return _bgScrollView;
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -46,7 +43,6 @@
     if (self.dataArr.count>0) {
         [self createSubView];
     }
-    
 }
 
 -(void)createSubView

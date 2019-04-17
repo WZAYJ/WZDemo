@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YYFPSLabel.h"
+#import "BaseTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,11 +20,15 @@
     // Override point for customization after application launch.
     
     [AMapServices sharedServices].apiKey = GDMapKay;
+    
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
+    
+    BaseTabBarViewController*vc = [[BaseTabBarViewController alloc]init];
+    
+    self.window.rootViewController = vc;
 
     return YES;
 }
-
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
