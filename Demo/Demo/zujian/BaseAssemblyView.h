@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseUIModel.h"
+#import "AssmblSetViewController.h"
+#import "AssemblySetupViewController.h"
 NS_ASSUME_NONNULL_BEGIN
-
 @interface BaseAssemblyView : UIView
 +(BaseAssemblyView*)viewWithDataDic:(NSDictionary*)dataDic;
 //-(instancetype)initwithDataUIModel:(BaseUIModel*)uiModel;

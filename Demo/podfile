@@ -5,6 +5,12 @@ pod 'ReactiveCocoa', '~> 2.5'
 pod 'AFNetworking'
 pod 'QMUIKit'
 pod 'YYKit'
+pod 'pop'
+pod 'TPKeyboardAvoiding'
+#图片处理
+pod 'GPUImage'
+#导航栏
+pod 'KMNavigationBarTransition'
 # pod 'PNChart'
 # 统计图形
 pod 'Charts'

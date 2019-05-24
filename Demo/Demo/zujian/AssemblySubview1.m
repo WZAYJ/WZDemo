@@ -9,6 +9,12 @@
 #import "AssemblySubview1.h"
 @interface AssemblySubview1()
 
+@property (nonatomic, strong) UIImageView *imageV;
+@property (nonatomic, strong) UILabel *titleL;
+@property (nonatomic, strong) UILabel *nameL;
+@property (nonatomic, strong) UILabel *englishL;
+
+
 @end
 
 @implementation AssemblySubview1
@@ -89,11 +95,48 @@
         make.centerY.equalTo(web);
         make.left.equalTo(web.mas_right).offset(25);
     }];     
-    
-    titleL.text = self.dataModel.title;
-    nameL.text = self.dataModel.name;
-    englishL.text =self.dataModel.englishName;
-    [imageV setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl] options:0];
+    self.titleL = titleL;
+    self.nameL = nameL;
+    self.englishL = englishL;
+    self.imageV =imageV;
+    [self bindData];
     
 }
+
+-(void)bindData
+{
+    [self.imageV setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl] options:0];
+    self.titleL.text = self.dataModel.title;
+    self.nameL.text = self.dataModel.name;
+    self.englishL.text =self.dataModel.englishName;
+}
+
+-(void)setupData
+{
+    AssemblySetupViewController*vc = [[AssemblySetupViewController alloc]init];
+    vc.dataModel = self.dataModel;
+    vc.assemblyType = @"1";
+    vc.titleArr = @[@"图片",@"标题",@"名称",@"英文名称",@"微信号",@"官网",@"电话"];
+    vc.typeArr =@[@"1",@"2",@"2",@"2",@"2",@"2",@"2"];
+    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+        self.dataModel = model;
+        [self bindData];
+    }];
+    [self.viewController.navigationController pushViewController:vc animated:NO];
+}
+
+//-(void)setupData
+//{
+//    AssmblSetViewController*vc = [[AssmblSetViewController alloc]init];
+//    vc.dataModel = self.dataModel;
+//    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+//        self.dataModel = model;
+//        [self bindModel];
+//
+//    }];
+//    [self.viewController.navigationController pushViewController:vc animated:NO];
+//    [self.viewController presentViewController:vc animated:NO completion:nil];
+    
+    
+//}
 @end

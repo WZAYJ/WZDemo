@@ -7,6 +7,11 @@
 //
 
 #import "AssemblySubview6.h"
+#import "AssemblySetupViewController.h"
+@interface AssemblySubview6()
+@property (nonatomic, strong) UILabel *titleL;
+@property (nonatomic, strong) UILabel *messageL;
+@end
 
 @implementation AssemblySubview6
 
@@ -30,9 +35,27 @@
         make.top.equalTo(titleL.mas_bottom).offset(15);
         make.bottom.equalTo(self).offset(-30);
     }];
-    
-    titleL.text = self.dataModel.title;
-    messageL.text = self.dataModel.desc;
+    self.titleL = titleL;
+    self.messageL =messageL;
+    [self bindData];
+   
 }
-
+-(void)bindData
+{
+    self.titleL.text = self.dataModel.title;
+    self.messageL.text = self.dataModel.desc;
+}
+-(void)setupData
+{
+    AssemblySetupViewController*vc = [[AssemblySetupViewController alloc]init];
+    vc.dataModel = self.dataModel;
+    vc.assemblyType = @"6";
+    vc.titleArr = @[@"标题",@"介绍"];
+    vc.typeArr =@[@"2",@"3"];
+    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+        self.dataModel = model;
+        [self bindData];
+    }];
+    [self.viewController.navigationController pushViewController:vc animated:NO];
+}
 @end

@@ -7,7 +7,13 @@
 //
 
 #import "AssemblySubview9.h"
-
+#import "AssemblySetup9ViewController.h"
+@interface AssemblySubview9 ()
+@property (nonatomic, strong) UILabel *nameL;
+@property (nonatomic, strong) UIImageView* imageV;
+@property (nonatomic, strong) UILabel* subheadingL;
+@property (nonatomic, strong) UILabel* commentL;
+@end
 @implementation AssemblySubview9
 
 -(void)createSubView
@@ -53,11 +59,33 @@
         make.left.right.equalTo(nameL);
         make.bottom.equalTo(shdowV).offset(-20);
     }];
-   
-    nameL.text = self.dataModel.title;
-    subheadingL.text = self.dataModel.subheading;
-    commentL.text = self.dataModel.desc;
-    [imageV setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl] options:0];
+    self.nameL =nameL;
+    self.subheadingL = subheadingL;
+    self.commentL = commentL;
+    self.imageV = imageV;
+    [self bindData];
+  
     
+}
+-(void)bindData
+{
+    self.nameL.text = self.dataModel.title;
+    self.subheadingL.text = self.dataModel.subheading;
+    self.commentL.text = self.dataModel.desc;
+    [self.imageV setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl] options:0];
+}
+-(void)setupData
+{
+    AssemblySetupViewController*vc = [[AssemblySetupViewController alloc]init];
+    vc.dataModel = self.dataModel;
+    vc.assemblyType = @"9";
+    vc.titleArr = @[@"图片",@"标题",@"副标题",@"介绍"];
+    vc.typeArr =@[@"1",@"2",@"2",@"2"];
+    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+        self.dataModel = model;
+        [self bindData];
+    }];
+    [self.viewController.navigationController pushViewController:vc animated:NO];
+  
 }
 @end

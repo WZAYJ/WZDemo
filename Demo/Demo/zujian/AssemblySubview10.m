@@ -8,6 +8,7 @@
 
 #import "AssemblySubview10.h"
 #import "SJVideoPlayer.h"
+#import "AssemblySetup10ViewController.h"
 @interface AssemblySubview10()
 @property (nonatomic, strong) SJVideoPlayer *player;
 @property (nonatomic, strong) UIImageView *coverImageView;
@@ -73,4 +74,16 @@
     _player.hideBackButtonWhenOrientationIsPortrait = YES;
     
 }
+
+-(void)setupData
+{
+    AssemblySetup10ViewController*vc = [[AssemblySetup10ViewController alloc]init];
+    vc.dataModel = self.dataModel;
+    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+        self.dataModel = model;
+//        [self bindModel];
+    }];
+    [self.viewController.navigationController pushViewController:vc animated:NO];
+}
+
 @end

@@ -7,7 +7,12 @@
 //
 
 #import "AssemblySubview7.h"
-
+#import "AssembleSet7ViewController.h"
+@interface AssemblySubview7()
+@property (nonatomic, strong) UILabel *titleL;
+@property (nonatomic, strong) UIImageView *imageV;
+@property (nonatomic, strong) UILabel *messageL;
+@end
 @implementation AssemblySubview7
 
 -(void)createSubView
@@ -37,11 +42,30 @@
         make.top.equalTo(imageV.mas_bottom).offset(13);
         make.bottom.equalTo(self).offset(-30);
     }];
-    
-    titleL.text = self.dataModel.title;
-    [imageV sd_setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl]];
-    messageL.text = self.dataModel.desc;
+    self.titleL = titleL;
+    self.imageV =imageV;
+    self.messageL = messageL;
+    [self bindData];
 }
 
+-(void)setupData
+{
+    AssemblySetupViewController*vc = [[AssemblySetupViewController alloc]init];
+    vc.dataModel = self.dataModel;
+    vc.assemblyType = @"7";
+    vc.titleArr = @[@"图片",@"标题",@"介绍"];
+    vc.typeArr =@[@"1",@"2",@"3"];
+    [vc setReturnRuestData:^(BaseUIDataModel * _Nonnull model) {
+        self.dataModel = model;
+        [self bindData];
+    }];
+    [self.viewController.navigationController pushViewController:vc animated:NO];
+}
 
+-(void)bindData
+{
+   self.titleL.text = self.dataModel.title;
+    [self.imageV sd_setImageWithURL:[NSURL URLWithString:self.dataModel.imgurl]];
+    self.messageL.text = self.dataModel.desc;
+}
 @end

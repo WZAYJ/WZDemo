@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic, copy) NSString* desc;
 @property (nonatomic, copy) NSString* imgurl;
+@property (nonatomic, copy) NSString* wx;
+@property (nonatomic, copy) NSString* gwurl;
+@property (nonatomic, copy) NSString* tel;
+
 @property (nonatomic, copy) NSString* name;
 @property (nonatomic, copy) NSString* englishName;
 @property (nonatomic, strong) NSArray *imageArr;
@@ -23,8 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 //纬度
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* longitude;
+@property (nonatomic, copy) NSString* address;
 //"1" = 透明渐变   “2”白色背景
 @property (nonatomic, copy) NSString* maptitleType;
+@property (nonatomic, strong)  NSArray<BaseUIDataModel*>*classify;
+
 @end
 
 @interface BaseUIModel : NSObject

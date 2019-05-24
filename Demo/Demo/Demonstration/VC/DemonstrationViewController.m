@@ -15,6 +15,10 @@
 #import "MoreImageUpDateViewController.h"
 #import "VoiceAnnouncementViewController.h"
 #import "SpeechViewController.h"
+#import "GPUImageDemoViewController.h"
+#import "WZCameraViewController.h"
+#import "StartViewController.h"
+#import "SearchScreenViewController.h"
 @interface DemonstrationViewController ()<QMUITableViewDelegate,QMUITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *sections;
 @end
@@ -42,8 +46,8 @@
 
     BaseWordItemModel*item3 = [BaseWordItemModel itemWithTitle:@"日期选择" subTitle:@"日期选择器"];
 
-    BaseWordItemModel*item4= [BaseWordItemModel itemWithTitle:@"侧滑筛选" subTitle:@"日期选择器"];
-
+    BaseWordItemModel*item4= [BaseWordItemModel itemWithTitle:@"搜索加筛选" subTitle:@"收货地址"];
+    item4.destVc = [SearchScreenViewController class];
     BaseItemSectionModel*section1 = [BaseItemSectionModel sectionWithItems:@[item1,item2,item3,item4] andHeaderTitle:@"弹出框"];
     
     
@@ -58,18 +62,25 @@
     item7.destVc = [InvoiceQianMingViewController class];
 
     BaseWordItemModel*item8 = [BaseWordItemModel itemWithTitle:@"星级评价" subTitle:@""];
-    item8.destVc = [InvoiceQianMingViewController class];
-    BaseItemSectionModel*section2 = [BaseItemSectionModel sectionWithItems:@[item5,item6,item7,item8] andHeaderTitle:@"图片"];
+    item8.destVc = [StartViewController class];
+    
+    BaseWordItemModel*item9 = [BaseWordItemModel itemWithTitle:@"图片处理GPUImage" subTitle:@"滤镜磨皮等。。"];
+    item9.destVc = [GPUImageDemoViewController class];
+    
+    BaseWordItemModel*item10 = [BaseWordItemModel itemWithTitle:@"相机" subTitle:@"滤镜磨皮等。。"];
+    item10.destVc = [WZCameraViewController class];
+    
+    BaseItemSectionModel*section2 = [BaseItemSectionModel sectionWithItems:@[item5,item6,item7,item8,item9,item10] andHeaderTitle:@"图片"];
     [self.sections addObject:section2];
     
     
     BaseWordItemModel*item12 = [BaseWordItemModel itemWithTitle:@"分段选择" subTitle:@"上传单张"];
     BaseWordItemModel*item13 = [BaseWordItemModel itemWithTitle:@"选择按钮" subTitle:@"上传单张"];
-//    BaseWordItemModel*item14 = [BaseWordItemModel itemWithTitle:@"单张上传" subTitle:@"上传单张"];
+    BaseWordItemModel*item14 = [BaseWordItemModel itemWithTitle:@"" subTitle:@"上传单张"];
+   
 //    BaseWordItemModel*item15 = [BaseWordItemModel itemWithTitle:@"单张上传" subTitle:@"上传单张"];
 //    BaseWordItemModel*item16 = [BaseWordItemModel itemWithTitle:@"单张上传" subTitle:@"上传单张"];
-
-    BaseItemSectionModel*section3 = [BaseItemSectionModel sectionWithItems:@[item12,item13] andHeaderTitle:@"按钮"];
+    BaseItemSectionModel*section3 = [BaseItemSectionModel sectionWithItems:@[item12,item13,item14] andHeaderTitle:@"按钮"];
     [self.sections addObject:section3];
 
     BaseWordItemModel*item20 = [BaseWordItemModel itemWithTitle:@"语音播报" subTitle:@""];
@@ -78,6 +89,13 @@
     item21.destVc = [SpeechViewController class];
     BaseItemSectionModel*section4 = [BaseItemSectionModel sectionWithItems:@[item20,item21] andHeaderTitle:@"语音"];
     [self.sections addObject:section4];
+    
+    BaseWordItemModel*item30 = [BaseWordItemModel itemWithTitle:@"pop动画" subTitle:@""];
+    item20.destVc = [VoiceAnnouncementViewController class];
+    BaseWordItemModel*item31 = [BaseWordItemModel itemWithTitle:@"Cor" subTitle:@""];
+    item21.destVc = [SpeechViewController class];
+    BaseItemSectionModel*section5 = [BaseItemSectionModel sectionWithItems:@[item30,item31] andHeaderTitle:@"动画"];
+    [self.sections addObject:section5];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -154,19 +172,17 @@
     BaseItemSectionModel*sectionItem =_sections[section];
     sectionItem.hiddenSection = !sectionItem.hiddenSection;
     [self.tableView reloadData];
-
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     QMUITableViewCell*cell = [tableView cellForRowAtIndexPath:indexPath];
     BaseItemSectionModel*sectionItem =_sections[indexPath.section];
     BaseWordItemModel*item = sectionItem.items[indexPath.row];
-
     if (indexPath.section == 0) {
     switch (indexPath.row) {
-        case 0:
-        {
+        case 0:{
             WZPopView*popview = [[WZPopView alloc]initWithFrame:ScreenBound];
             NSArray*arr =@[@"选项1",@"选项2",@"选项3",@"选项4"];
             popview.dataArr = arr;
@@ -175,7 +191,6 @@
             }];
             UIWindow *win =[UIApplication sharedApplication].keyWindow;
             [win addSubview:popview];
-            // 显示底部视图
             [popview showOrHidden];
         }
             break;
@@ -190,9 +205,7 @@
                     NSString*district = array[2];
                     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@%@%@",province,city,district];
                 }
-
             } cancelBlock:^{
-                
             }];
         }
             break;
@@ -201,15 +214,18 @@
             [[MOFSPickerManager shareManger]showDatePickerWithTag:1 firstDate:[NSDate date] minDate:[NSDate dateWithString:@"1949-01-01" format:@"yyyy-mm-dd"] maxDate:[NSDate date] datePickerMode:1 commitBlock:^(NSDate * _Nonnull date) {
                 cell.detailTextLabel.text = [date stringWithFormat:@"yyyy-mm-dd"];
             } cancelBlock:^{
-                
             }];
         }
             break;
-           
+        case 3:
+        {
+            BaseViewController*vc =  [[item.destVc alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
-        
     }
     if (indexPath.section == 1) {
 
@@ -244,8 +260,13 @@
                 }];
                 [self.navigationController pushViewController:vc animated:NO];
             }
+                
                 break;
             default:
+            {
+                BaseViewController*vc =  [[item.destVc alloc]init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
                 break;
         }
     }

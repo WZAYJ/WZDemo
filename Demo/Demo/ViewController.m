@@ -87,7 +87,6 @@
     if ([self currentIndex]<=0) {
          [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:15 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     }
-        
     
 }
 

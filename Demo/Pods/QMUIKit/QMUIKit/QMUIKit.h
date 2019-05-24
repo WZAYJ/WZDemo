@@ -20,7 +20,7 @@ static NSString * const QMUI_VERSION = @"2.9.3";
 #endif
 
 #if __has_include("CALayer+QMUI.h")
-#import "CALayer+QMUI.h"
+//#import "CALayer+QMUI.h"
 #endif
 
 #if __has_include("NSArray+QMUI.h")

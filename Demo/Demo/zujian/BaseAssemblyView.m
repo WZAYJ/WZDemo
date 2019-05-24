@@ -16,9 +16,10 @@
 {
     BaseUIModel*model = [BaseUIModel modelWithJSON:dataDic];
     NSString*className = [NSString stringWithFormat:@"AssemblySubview%@",dataDic[@"viewType"]];
+    
     return  [[NSClassFromString(className) alloc]initwithDataUIModel:model];
-   
 }
+
 
 -(instancetype)initwithDataUIModel:(BaseUIModel*)uiModel
 {
@@ -26,8 +27,15 @@
         self.dataModel = uiModel.dataModel;
         [self createSubView];
         self.backgroundColor = [UIColor whiteColor];
+
+        UITapGestureRecognizer*tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(setupData)];
+        [self addGestureRecognizer:tap];
     }
     return self;
+}
+
+-(void)setupData
+{
     
 }
 
