@@ -36,4 +36,8 @@
 #import "BaseViewController.h"
 #import <pop/pop.h>
 #import <TPKeyboardAvoiding/TPKeyboardAvoiding-umbrella.h>
+
+#import "UIView+viewController.h"
+#import "UIViewExt.h"
+#import "NSString+Size.h"
 #endif /* PrefixHeader_pch */

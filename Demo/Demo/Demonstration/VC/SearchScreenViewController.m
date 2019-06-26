@@ -12,9 +12,7 @@
 @interface SearchScreenViewController ()
 @property (nonatomic, strong) SearchScreenView *topView;
 @property (nonatomic, strong) ScreenView* screenView;
-
 @end
-
 
 @implementation SearchScreenViewController
 -(ScreenView *)screenView{
@@ -34,13 +32,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"搜索";
     [self.view addSubview:self.topView];
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.view);
     }];
-    
     WeakSelf
     [self.topView setScreen:^{
         weakSelf.screenView.hidden = ! weakSelf.screenView.hidden ;
@@ -50,7 +46,6 @@
         make.top.equalTo(self.topView.mas_bottom);
 //        make.top.equalTo(self.topView).offset(60);
         make.bottom.left.right.equalTo(self.view);
-        
     }];
 }
 

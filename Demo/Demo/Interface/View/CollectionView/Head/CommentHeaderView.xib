@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-78-OAO">
+                    <rect key="frame" x="15" y="15" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.004054850433" green="0.70045965909999997" blue="0.99986177679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="147-J6-a2p"/>
+                        <constraint firstAttribute="width" constant="40" id="KeA-vE-NKu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周杰伦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x0-wG-QqU">
+                    <rect key="frame" x="65" y="15" width="40" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="E7Q-vG-WiW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.63102883099999996" green="0.63891613479999998" blue="0.6596223712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOc-M6-iI1">
+                    <rect key="frame" x="65" y="35" width="36.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9td-ZQ-Gww"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.63102883099999996" green="0.63891613479999998" blue="0.6596223712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDu-lR-bD8">
+                    <rect key="frame" x="365" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Zal-08-QEA"/>
+                        <constraint firstAttribute="width" constant="20" id="f0Q-YQ-aIO"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="comment_more"/>
+                    <connections>
+                        <action selector="more:" destination="iN0-l3-epB" eventType="touchUpInside" id="PxV-iJ-Syy"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="忘不了的昨天，忙不完的今天，想不到的明天，走不完的人生，过不完的坎坷，越不过的无奈，听不完的谎言，看不透的人心，放不下的牵挂，经历不完的酸甜苦辣，这就是人生，这就是生活！生，容易，而活，真的很不容易！离开的都是风景，留下的才是人生！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuJ-ti-Yre">
+                    <rect key="frame" x="15" y="71" width="360" height="136"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUU-uY-b4Z">
+                    <rect key="frame" x="300" y="15" width="60" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="WrM-CO-0U9"/>
+                        <constraint firstAttribute="height" constant="20" id="dxQ-4b-dgs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="999" image="comment_zan_nor">
+                        <color key="titleColor" red="0.63102883099999996" green="0.63891613479999998" blue="0.6596223712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="comment_zan_high"/>
+                    <connections>
+                        <action selector="zan:" destination="iN0-l3-epB" eventType="touchUpInside" id="AZJ-Pw-vOY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1x0-wG-QqU" firstAttribute="leading" secondItem="uDk-78-OAO" secondAttribute="trailing" constant="10" id="0Og-S9-K1Z"/>
+                <constraint firstItem="1x0-wG-QqU" firstAttribute="top" secondItem="uDk-78-OAO" secondAttribute="top" id="1EC-ZW-gub"/>
+                <constraint firstItem="jDu-lR-bD8" firstAttribute="centerY" secondItem="XUU-uY-b4Z" secondAttribute="centerY" id="5Yk-1J-rP3"/>
+                <constraint firstItem="uDk-78-OAO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="6nj-ng-TJX"/>
+                <constraint firstItem="vOc-M6-iI1" firstAttribute="leading" secondItem="1x0-wG-QqU" secondAttribute="leading" id="7Vc-qv-cgT"/>
+                <constraint firstAttribute="trailing" secondItem="CuJ-ti-Yre" secondAttribute="trailing" constant="15" id="8su-hd-WQU"/>
+                <constraint firstItem="jDu-lR-bD8" firstAttribute="centerY" secondItem="1x0-wG-QqU" secondAttribute="centerY" id="KCV-9T-Dj8"/>
+                <constraint firstItem="uDk-78-OAO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="Zem-tW-ewj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CuJ-ti-Yre" secondAttribute="bottom" constant="5" id="jO9-CR-Qxi"/>
+                <constraint firstItem="CuJ-ti-Yre" firstAttribute="leading" secondItem="uDk-78-OAO" secondAttribute="leading" id="lH4-hg-t8a"/>
+                <constraint firstItem="jDu-lR-bD8" firstAttribute="leading" secondItem="XUU-uY-b4Z" secondAttribute="trailing" constant="5" id="lPF-u2-XHv"/>
+                <constraint firstItem="vOc-M6-iI1" firstAttribute="top" secondItem="1x0-wG-QqU" secondAttribute="bottom" id="lov-ls-su2"/>
+                <constraint firstItem="CuJ-ti-Yre" firstAttribute="top" secondItem="vOc-M6-iI1" secondAttribute="bottom" constant="15" id="mhd-fs-Y5I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jDu-lR-bD8" secondAttribute="trailing" constant="5" id="nsp-Ie-PDE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headView" destination="uDk-78-OAO" id="kUD-3C-0K8"/>
+                <outlet property="messageL" destination="CuJ-ti-Yre" id="NSt-KG-Qc6"/>
+                <outlet property="moreBtn" destination="jDu-lR-bD8" id="YcR-Hn-afn"/>
+                <outlet property="nameL" destination="1x0-wG-QqU" id="6cx-lm-7G2"/>
+                <outlet property="timeL" destination="vOc-M6-iI1" id="E1x-bO-sJD"/>
+                <outlet property="zanBtn" destination="XUU-uY-b4Z" id="UVl-ne-Ixu"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="44.977511244377816"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comment_more" width="15" height="15"/>
+        <image name="comment_zan_high" width="21" height="21"/>
+        <image name="comment_zan_nor" width="21" height="21"/>
+    </resources>
+</document>

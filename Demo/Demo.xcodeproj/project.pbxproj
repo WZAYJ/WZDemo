@@ -11,6 +11,16 @@
 		181F39AF22672D400065FF60 /* SpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F39AD22672D400065FF60 /* SpeechViewController.xib */; };
 		181F39B1226730910065FF60 /* pingfan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 181F39B0226730900065FF60 /* pingfan.mp3 */; };
 		18416C97224B8382001F69A7 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18416C96224B8382001F69A7 /* BlockViewController.m */; };
+		18624A2222A65256000A4733 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A2022A65256000A4733 /* CommentViewController.m */; };
+		18624A2322A65256000A4733 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18624A2122A65256000A4733 /* CommentViewController.xib */; };
+		18624A2622A659F0000A4733 /* CommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A2522A659F0000A4733 /* CommentHeaderView.m */; };
+		18624A2822A65A08000A4733 /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18624A2722A65A08000A4733 /* CommentHeaderView.xib */; };
+		18624A3022A65AF6000A4733 /* UIView+viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A2A22A65AF6000A4733 /* UIView+viewController.m */; };
+		18624A3122A65AF6000A4733 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A2C22A65AF6000A4733 /* UIViewExt.m */; };
+		18624A3222A65AF6000A4733 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A2F22A65AF6000A4733 /* NSString+Size.m */; };
+		18624A3622A66012000A4733 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A3422A66012000A4733 /* CommentTableViewCell.m */; };
+		18624A3722A66012000A4733 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18624A3522A66012000A4733 /* CommentTableViewCell.xib */; };
+		18624A3D22A68176000A4733 /* MHYouKuInputPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18624A3B22A68175000A4733 /* MHYouKuInputPanelView.m */; };
 		1867AC0E2260264800ECF3C0 /* DemonstrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867AC0D2260264800ECF3C0 /* DemonstrationViewController.m */; };
 		1867AC12226027A200ECF3C0 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867AC10226027A200ECF3C0 /* BaseTableViewController.m */; };
 		1867AC13226027A200ECF3C0 /* BaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1867AC11226027A200ECF3C0 /* BaseTableViewController.xib */; };
@@ -132,6 +142,8 @@
 		18E8899F2266C0CD00A62EE8 /* VoiceAnnouncementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8899D2266C0CD00A62EE8 /* VoiceAnnouncementViewController.m */; };
 		18E889A02266C0CD00A62EE8 /* VoiceAnnouncementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8899E2266C0CD00A62EE8 /* VoiceAnnouncementViewController.xib */; };
 		18EF269D2255EEE5007D83D8 /* AssemblySubview12.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF269C2255EEE5007D83D8 /* AssemblySubview12.m */; };
+		18F760AA229D0C870094D31F /* BaseType4TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F760A8229D0C870094D31F /* BaseType4TableViewCell.m */; };
+		18F760AB229D0C870094D31F /* BaseType4TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F760A9229D0C870094D31F /* BaseType4TableViewCell.xib */; };
 		18F7876422900424003CFAA7 /* SearchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7876222900424003CFAA7 /* SearchScreenViewController.m */; };
 		18F7876822900634003CFAA7 /* SearchScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7876722900634003CFAA7 /* SearchScreenView.m */; };
 		18F7876A22900642003CFAA7 /* SearchScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F7876922900642003CFAA7 /* SearchScreenView.xib */; };
@@ -173,6 +185,23 @@
 		181F39B0226730900065FF60 /* pingfan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pingfan.mp3; sourceTree = "<group>"; };
 		18416C95224B8382001F69A7 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		18416C96224B8382001F69A7 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		18624A1F22A65256000A4733 /* CommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		18624A2022A65256000A4733 /* CommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		18624A2122A65256000A4733 /* CommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		18624A2422A659F0000A4733 /* CommentHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentHeaderView.h; sourceTree = "<group>"; };
+		18624A2522A659F0000A4733 /* CommentHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentHeaderView.m; sourceTree = "<group>"; };
+		18624A2722A65A08000A4733 /* CommentHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentHeaderView.xib; sourceTree = "<group>"; };
+		18624A2A22A65AF6000A4733 /* UIView+viewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+viewController.m"; sourceTree = "<group>"; };
+		18624A2B22A65AF6000A4733 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		18624A2C22A65AF6000A4733 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		18624A2D22A65AF6000A4733 /* UIView+viewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+viewController.h"; sourceTree = "<group>"; };
+		18624A2E22A65AF6000A4733 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		18624A2F22A65AF6000A4733 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		18624A3322A66012000A4733 /* CommentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		18624A3422A66012000A4733 /* CommentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		18624A3522A66012000A4733 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		18624A3B22A68175000A4733 /* MHYouKuInputPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHYouKuInputPanelView.m; sourceTree = "<group>"; };
+		18624A3C22A68176000A4733 /* MHYouKuInputPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHYouKuInputPanelView.h; sourceTree = "<group>"; };
 		1867AC0C2260264800ECF3C0 /* DemonstrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemonstrationViewController.h; sourceTree = "<group>"; };
 		1867AC0D2260264800ECF3C0 /* DemonstrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemonstrationViewController.m; sourceTree = "<group>"; };
 		1867AC0F226027A200ECF3C0 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
@@ -403,6 +432,9 @@
 		18E8899E2266C0CD00A62EE8 /* VoiceAnnouncementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoiceAnnouncementViewController.xib; sourceTree = "<group>"; };
 		18EF269B2255EEE5007D83D8 /* AssemblySubview12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblySubview12.h; sourceTree = "<group>"; };
 		18EF269C2255EEE5007D83D8 /* AssemblySubview12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblySubview12.m; sourceTree = "<group>"; };
+		18F760A7229D0C870094D31F /* BaseType4TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseType4TableViewCell.h; sourceTree = "<group>"; };
+		18F760A8229D0C870094D31F /* BaseType4TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseType4TableViewCell.m; sourceTree = "<group>"; };
+		18F760A9229D0C870094D31F /* BaseType4TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseType4TableViewCell.xib; sourceTree = "<group>"; };
 		18F7876122900424003CFAA7 /* SearchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchScreenViewController.h; sourceTree = "<group>"; };
 		18F7876222900424003CFAA7 /* SearchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchScreenViewController.m; sourceTree = "<group>"; };
 		18F7876622900634003CFAA7 /* SearchScreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchScreenView.h; sourceTree = "<group>"; };
@@ -456,6 +488,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18624A2922A65AF6000A4733 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18624A2D22A65AF6000A4733 /* UIView+viewController.h */,
+				18624A2A22A65AF6000A4733 /* UIView+viewController.m */,
+				18624A2E22A65AF6000A4733 /* UIViewExt.h */,
+				18624A2C22A65AF6000A4733 /* UIViewExt.m */,
+				18624A2B22A65AF6000A4733 /* NSString+Size.h */,
+				18624A2F22A65AF6000A4733 /* NSString+Size.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1867AC0B2260263600ECF3C0 /* Demonstration */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,6 +817,7 @@
 		189820062241E17600775650 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				18624A2922A65AF6000A4733 /* Extensions */,
 				18F8846E22641A670001C39B /* Interface */,
 				1867AC0B2260263600ECF3C0 /* Demonstration */,
 				1896FF40225F468200A16AC5 /* Assembly */,
@@ -831,6 +877,9 @@
 				18D69F32228D4E53001AE5E5 /* BaseType2TableViewCell.h */,
 				18D69F33228D4E53001AE5E5 /* BaseType2TableViewCell.m */,
 				18D69F34228D4E53001AE5E5 /* BaseType2TableViewCell.xib */,
+				18F760A7229D0C870094D31F /* BaseType4TableViewCell.h */,
+				18F760A8229D0C870094D31F /* BaseType4TableViewCell.m */,
+				18F760A9229D0C870094D31F /* BaseType4TableViewCell.xib */,
 				18D69F37228D4E74001AE5E5 /* BaseType3TableViewCell.h */,
 				18D69F38228D4E74001AE5E5 /* BaseType3TableViewCell.m */,
 				18D69F39228D4E74001AE5E5 /* BaseType3TableViewCell.xib */,
@@ -906,6 +955,9 @@
 			children = (
 				18F8846F22641A780001C39B /* InterfaceViewController.h */,
 				18F8847022641A780001C39B /* InterfaceViewController.m */,
+				18624A1F22A65256000A4733 /* CommentViewController.h */,
+				18624A2022A65256000A4733 /* CommentViewController.m */,
+				18624A2122A65256000A4733 /* CommentViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -938,6 +990,9 @@
 		18F8847F226423770001C39B /* Head */ = {
 			isa = PBXGroup;
 			children = (
+				18624A2422A659F0000A4733 /* CommentHeaderView.h */,
+				18624A2522A659F0000A4733 /* CommentHeaderView.m */,
+				18624A2722A65A08000A4733 /* CommentHeaderView.xib */,
 			);
 			path = Head;
 			sourceTree = "<group>";
@@ -945,6 +1000,11 @@
 		18F88486226423770001C39B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				18624A3322A66012000A4733 /* CommentTableViewCell.h */,
+				18624A3422A66012000A4733 /* CommentTableViewCell.m */,
+				18624A3522A66012000A4733 /* CommentTableViewCell.xib */,
+				18624A3C22A68176000A4733 /* MHYouKuInputPanelView.h */,
+				18624A3B22A68175000A4733 /* MHYouKuInputPanelView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1095,6 +1155,7 @@
 				1867AC13226027A200ECF3C0 /* BaseTableViewController.xib in Resources */,
 				186B2E1F228272A4003002B0 /* icon_star02@2x.png in Resources */,
 				188D4AFF226ACCE500BB05D2 /* zzy.png in Resources */,
+				18624A2822A65A08000A4733 /* CommentHeaderView.xib in Resources */,
 				1867AC2D2260888C00ECF3C0 /* isoregion.xml in Resources */,
 				1867B3202260A2F400ECF3C0 /* HXPhotoPicker.bundle in Resources */,
 				188D4B04226B0CBD00BB05D2 /* WZCameraViewController.xib in Resources */,
@@ -1103,8 +1164,11 @@
 				18F7877A2292536D003CFAA7 /* ScreenTableViewCell.xib in Resources */,
 				1867B2A8226097A900ECF3C0 /* qianming_bg@2x.png in Resources */,
 				18D69F36228D4E53001AE5E5 /* BaseType2TableViewCell.xib in Resources */,
+				18624A3722A66012000A4733 /* CommentTableViewCell.xib in Resources */,
 				18D69F31228D4E41001AE5E5 /* BaseType1TableViewCell.xib in Resources */,
 				18D69F2C228D3644001AE5E5 /* AssmblSetViewController.xib in Resources */,
+				18624A2322A65256000A4733 /* CommentViewController.xib in Resources */,
+				18F760AB229D0C870094D31F /* BaseType4TableViewCell.xib in Resources */,
 				186B2E262282CCA1003002B0 /* POPAnimationViewController.xib in Resources */,
 				18E889A02266C0CD00A62EE8 /* VoiceAnnouncementViewController.xib in Resources */,
 				1898200F2241E17600775650 /* Main.storyboard in Resources */,
@@ -1237,6 +1301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1867AC302260888C00ECF3C0 /* MOFSPickerManager.m in Sources */,
+				18624A2222A65256000A4733 /* CommentViewController.m in Sources */,
 				18D023F7225F374E003C6A67 /* YYFPSLabel.m in Sources */,
 				18F7876422900424003CFAA7 /* SearchScreenViewController.m in Sources */,
 				1867AC322260888C00ECF3C0 /* AddressModel.m in Sources */,
@@ -1255,6 +1320,7 @@
 				18E6CBE82255947F00607943 /* AssemblySubview6.m in Sources */,
 				1867AC1922606E8D00ECF3C0 /* BaseWordItemModel.m in Sources */,
 				1867B3102260A2F400ECF3C0 /* HXPhotoManager.m in Sources */,
+				18624A3122A65AF6000A4733 /* UIViewExt.m in Sources */,
 				18E6CBCD22558FB600607943 /* BaseAssemblyView.m in Sources */,
 				1896FF46225F46C900A16AC5 /* BaseViewController.m in Sources */,
 				18F787792292536D003CFAA7 /* ScreenTableViewCell.m in Sources */,
@@ -1262,6 +1328,7 @@
 				1898203B224215CA00775650 /* WZPopView.m in Sources */,
 				1867B30E2260A2F400ECF3C0 /* HXDatePhotoViewFlowLayout.m in Sources */,
 				18F7876822900634003CFAA7 /* SearchScreenView.m in Sources */,
+				18624A3022A65AF6000A4733 /* UIView+viewController.m in Sources */,
 				1867B3012260A2F400ECF3C0 /* HXPhoto3DTouchViewController.m in Sources */,
 				1867B3082260A2F400ECF3C0 /* HXPhotoModel.m in Sources */,
 				18E8899F2266C0CD00A62EE8 /* VoiceAnnouncementViewController.m in Sources */,
@@ -1273,8 +1340,10 @@
 				1867B3032260A2F400ECF3C0 /* NSBundle+HXPhotoPicker.m in Sources */,
 				18E6CBF7225594B000607943 /* AssemblySubview11.m in Sources */,
 				1896FF3F225F459900A16AC5 /* BaseTabBarViewController.m in Sources */,
+				18624A3222A65AF6000A4733 /* NSString+Size.m in Sources */,
 				18D023F4225EE8F4003C6A67 /* QMUIConfigurationTemplate.m in Sources */,
 				1896FF49225F47CD00A16AC5 /* AssemblyViewController.m in Sources */,
+				18F760AA229D0C870094D31F /* BaseType4TableViewCell.m in Sources */,
 				1867B3092260A2F400ECF3C0 /* HXAlbumListViewController.m in Sources */,
 				1867AC3C226092D300ECF3C0 /* ZZQAvatarPicker.m in Sources */,
 				1898204222424C4400775650 /* Tools.m in Sources */,
@@ -1294,6 +1363,7 @@
 				18E6CBD92255943300607943 /* AssemblySubview1.m in Sources */,
 				1867AC3B226092D300ECF3C0 /* ZZQAuthorizationManager.m in Sources */,
 				18D69F53228D766B001AE5E5 /* AssemblySetup6ViewController.m in Sources */,
+				18624A3622A66012000A4733 /* CommentTableViewCell.m in Sources */,
 				1867AC2F2260888C00ECF3C0 /* MOFSToolView.m in Sources */,
 				1867AC0E2260264800ECF3C0 /* DemonstrationViewController.m in Sources */,
 				18416C97224B8382001F69A7 /* BlockViewController.m in Sources */,
@@ -1333,6 +1403,7 @@
 				18F7876D229230AA003CFAA7 /* WZSubsectionButton.m in Sources */,
 				1898203E22424BE400775650 /* HttpTools.m in Sources */,
 				1867B3052260A2F400ECF3C0 /* UIImageView+HXExtension.m in Sources */,
+				18624A3D22A68176000A4733 /* MHYouKuInputPanelView.m in Sources */,
 				1867B30F2260A2F400ECF3C0 /* HXDatePhotoViewController.m in Sources */,
 				1867B31A2260A2F400ECF3C0 /* HXPhotoSubViewCell.m in Sources */,
 				1867B3222260A2F400ECF3C0 /* HXDatePhotoEditViewController.m in Sources */,
@@ -1347,6 +1418,7 @@
 				18E80AD6228E95EC00EE5B5B /* WZSelectVIew.m in Sources */,
 				18D69F50228D70FA001AE5E5 /* AssemblySetup9ViewController.m in Sources */,
 				18E6CBEE2255949400607943 /* AssemblySubview8.m in Sources */,
+				18624A2622A659F0000A4733 /* CommentHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
